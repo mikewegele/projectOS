@@ -7,7 +7,7 @@ CFLAGS = -std=c99 -mcpu=arm920t -ffreestanding -nostdlib -DUARTCLK=48000000 -DBA
 LDFLAGS = -Wl,-Ttext=0x20000000 -Wl,-e,_start
 
 QEMU = qemu-bsprak
-QEMUFLAGS = -M portux920t -nographic -serial stdio -monitor none -kernel $(OUT)
+QEMUFLAGS = -kernel $(OUT)
 
 all: $(OUT)
 
