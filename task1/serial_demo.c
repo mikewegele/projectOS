@@ -41,7 +41,7 @@ static void serial_send_string(const char *s) {
 
 /*
 A simple printf-like function that supports:
-%c (char), %s (string) and %p (pointer).
+%c (char) and %s (string)
 It sends formatted text over the serial connection.
 */
 static int my_printf(const char *fmt, ...) {
@@ -59,12 +59,6 @@ static int my_printf(const char *fmt, ...) {
         case 's': {
             const char *s = va_arg(ap, const char*);
             serial_send_string(s ? s : "(null)");
-            break;
-        }
-        case 'p': {
-            char b[17];
-            serial_send_string("0x");
-            serial_send_string(b);
             break;
         }
         default:
