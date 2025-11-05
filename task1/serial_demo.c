@@ -41,7 +41,7 @@ static void serial_send_string(const char *s) {
 
 /*
 A simple printf-like function that supports:
-%c (char), %s (string), %x (hex), and %p (pointer).
+%c (char), %s (string) and %p (pointer).
 It sends formatted text over the serial connection.
 */
 static int my_printf(const char *fmt, ...) {

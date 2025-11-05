@@ -30,5 +30,5 @@
 
 - Gruppenarbeit: Durch den Ausstieg von Leon habe ich die Aufgabe alleine weitergeführt.
 - Technische Hürden:
-    - Die String-Ausgabe hat nicht funktioniert.
-    - Auch die Hex-Ausgabe konnte nicht umgesetzt werden. Vermutlich müsste man dafür einen zusätzlichen Wrapper schreiben, um die Ausgabe umzusetzbar zu machen.
+   - Die Hex-Ausgabe konnte nicht umgesetzt werden. Vermutlich müsste man dafür einen zusätzlichen Wrapper schreiben, um die Ausgabe umzusetzbar zu machen.
+
